@@ -1,0 +1,5 @@
+How is implementing a framework different from implementing a game?
+
+Short answer: it's not really all that different. From the player's perspective, the UX of playing a game made with a framework is no different from a stand-alone text adventure, which means the same things have to be done with player input as before. The difference is that the engine--the set of parser, logic handler, and state--has no information about the game, and therefore doesn't function on its own.
+
+To make a functioning game, the engine must be initialized with game-specific data. With a framework, there are two users -- the player user, who types things and expects text responses in return, and the gamemaker user, who writes the game metadata and feeds it to the framework engine to produce a game identity that will handle the input from the player.
